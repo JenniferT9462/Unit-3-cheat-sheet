@@ -189,13 +189,15 @@
 
     <h3>✅ Use draw() for:</h3>
     <ul>
-      <li>🎮 Movement <br> 
+      <li>
+        🎮 Movement <br />
         <p>Example:</p>
         <pre>
         // Moves right
         sprite.velocityX = 3; 
         // Moves up  
-        sprite.velocityY = -2; </pre>
+        sprite.velocityY = -2; </pre
+        >
       </li>
       <li>Animation</li>
       <li>Constant updates</li>
@@ -204,18 +206,76 @@
       🔁 Put moving and changing things inside draw(). 🚫 Don't put
       createSprite() or var score = 0 inside draw()—they’ll reset every frame!
     </h3>
-    <hr>
+    <hr />
+    <h2>🧠 CONDITIONALS</h2>
+    <p>Conditionals let your program make decisions.</p>
+    <h3>Example in code:</h3>
+    <pre>
+        
+        if (score > 10) {
+            
+            console.log("You're doing great!");
+         
+        } else {
+            console.log("Keep trying!");
+        }
+    </pre>
+    <h3>Basic Structure:</h3>
+    <pre>
+        if (condition) {
+            // do this if true
+        } else {
+            // do this if false
+        }
+    </pre>
+    <h3>✅ Common Conditions:</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Meaning</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>==</td>
+          <td>Equal to</td>
+          <td>score == 10</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>Not equal</td>
+          <td>lives != 0</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>Greater than</td>
+          <td>points &gt; 50</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>Less than</td>
+          <td>speed &lt; 5</td>
+        </tr>
+        <tr>
+          <td>&gt;=</td>
+          <td>Greater or equal</td>
+          <td>score &gt;= 100</td>
+        </tr>
+        <tr>
+          <td>&lt;=</td>
+          <td>Less or equal</td>
+          <td>level &lt;= 3</td>
+        </tr>
+      </tbody>
+    </table>
+
     <h2>🧠 Tips</h2>
     <ul>
-        <li>End every statement with a ;</li>
-        <li>Use camelCase for variable names: myScore, playerSpeed</li>
-        <li>Keep your code organized using spacing and indentation</li>
+      <li>End every statement with a ;</li>
+      <li>Use camelCase for variable names: myScore, playerSpeed</li>
+      <li>Keep your code organized using spacing and indentation</li>
     </ul>
   </body>
-  
-    
-
-    
-
-    
 </html>
