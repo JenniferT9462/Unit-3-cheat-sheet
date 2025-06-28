@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit-3 Cheat Sheet</title>
+  </head>
+  <body>
+    <h1>The More You Know...</h1>
+    <h2>🔤 What is JavaScript?</h2>
+    <p>
+      JavaScript is the language you’re using in Code.org to create animations,
+      games, and interactive programs. You write instructions for the computer
+      to follow using blocks or text.
+    </p>
+    <hr />
+    <h2>🔢 VARIABLES</h2>
+    <p>
+      What is a variable?<br />
+      A variable stores information (like numbers or text) so your program can
+      use or change it later.
+    </p>
+    <pre>
+        // Create a variable
+        var score = 0; 
+
+        // Update variable
+        score = score + 1; 
+
+        // Display variable on screen
+        text(score, 200, 100); 
+    </pre>
+    <table style="border-collapse: collapse; width: 50%; margin-top: 20px">
+      <tr style="background-color: #f2f2f2">
+        <th style="border: 1px solid #ddd; padding: 12px; text-align: left">
+          Block
+        </th>
+        <th style="border: 1px solid #ddd; padding: 12px; text-align: left">
+          Purpose
+        </th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 12px">var x = 0;</td>
+        <td style="border: 1px solid #ddd; padding: 12px">
+          Declare a new variable
+        </td>
+      </tr>
+      <tr style="background-color: #f9f9f9">
+        <td style="border: 1px solid #ddd; padding: 12px">x = x + 1;</td>
+        <td style="border: 1px solid #ddd; padding: 12px">
+          Change variable value
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 12px">
+          text(x, xPos, yPos);
+        </td>
+        <td style="border: 1px solid #ddd; padding: 12px">
+          Show variable value on screen
+        </td>
+      </tr>
+    </table>
+    <h3>💡 Use variables to:</h3>
+    <ul>
+      <li>Keep track of points, health, or time</li>
+      <li>Store player names or answers</li>
+    </ul>
+    <hr />
+    <h2>📍POSITIONING</h2>
+    <ul>
+      <li>The screen is a grid!</li>
+      <li>X-axis (left to right)</li>
+      <li>Y-axis (top to bottom)</li>
+      <li>(0, 0) is the top-left corner</li>
+    </ul>
+
+    <table style="border-collapse: collapse; width: 50%; margin-top: 20px">
+      <tr style="background-color: #f2f2f2">
+        <th style="border: 1px solid #ccc; padding: 12px; text-align: left">
+          Block
+        </th>
+        <th style="border: 1px solid #ccc; padding: 12px; text-align: left">
+          Parameters
+        </th>
+        <th style="border: 1px solid #ccc; padding: 12px; text-align: left">
+          Example
+        </th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 12px">
+          createSprite(x, y)
+        </td>
+        <td style="border: 1px solid #ccc; padding: 12px">
+          Position of sprite
+        </td>
+        <td style="border: 1px solid #ccc; padding: 12px">
+          createSprite(100, 200)
+        </td>
+      </tr>
+      <tr style="background-color: #f9f9f9">
+        <td style="border: 1px solid #ccc; padding: 12px">sprite.x = value</td>
+        <td style="border: 1px solid #ccc; padding: 12px">
+          Set horizontal position
+        </td>
+        <td style="border: 1px solid #ccc; padding: 12px">ball.x = 250</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 12px">sprite.y = value</td>
+        <td style="border: 1px solid #ccc; padding: 12px">
+          Set vertical position
+        </td>
+        <td style="border: 1px solid #ccc; padding: 12px">ball.y = 150</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>🧸 SPRITES (Characters, Objects)</h2>
+
+    <p>Create and control images/characters on the screen.</p>
+    <pre>
+        var player = createSprite(100, 200);
+        player.setAnimation("hero_idle");
+        player.scale = 0.5;
+    </pre>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Block</th>
+          <th>Parameters</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>createSprite(x, y)</td>
+          <td>X and Y position</td>
+          <td><code>createSprite(100, 200)</code></td>
+        </tr>
+        <tr>
+          <td>setAnimation("name")</td>
+          <td>Costume/image</td>
+          <td><code>s.setAnimation("cat_1")</code></td>
+        </tr>
+        <tr>
+          <td>sprite.scale = value</td>
+          <td>Size (1 = normal)</td>
+          <td><code>sprite.scale = 0.5</code></td>
+        </tr>
+        <tr>
+          <td>sprite.rotation = deg</td>
+          <td>Rotate sprite</td>
+          <td><code>sprite.rotation = 45</code></td>
+        </tr>
+        <tr>
+          <td>sprite.velocityX = value</td>
+          <td>Move left/right</td>
+          <td><code>ball.velocityX = 3</code></td>
+        </tr>
+        <tr>
+          <td>sprite.velocityY = value</td>
+          <td>Move up/down</td>
+          <td><code>ball.velocityY = -3</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <h2>🔄 DRAW LOOP</h2>
+    <p>
+      What is it? <br />
+      The draw() function runs continuously, about 30–60 times per second.
+      Everything inside it updates on the screen.
+    </p>
+    <p>
+      The draw() function runs again and again (like a flipbook). This is where
+      animation happens!
+    </p>
+    <pre>
+        function draw() {
+            background("white");
+            drawSprites(); // shows all your sprites
+        }
+    </pre>
+
+    <h3>✅ Use draw() for:</h3>
+    <ul>
+      <li>Movement</li>
+      <li>Animation</li>
+      <li>Constant updates</li>
+    </ul>
+    <h3>
+      🔁 Put moving and changing things inside draw(). 🚫 Don't put
+      createSprite() or var score = 0 inside draw()—they’ll reset every frame!
+    </h3>
+  </body>
+</html>
