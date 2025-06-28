@@ -207,6 +207,67 @@
       createSprite() or var score = 0 inside draw()—they’ll reset every frame!
     </h3>
     <hr />
+    <h2>🧠 What is the Counter Pattern?</h2>
+    <p>
+      The counter pattern is used to increase or decrease a variable by a
+      consistent amount—most commonly used for things like:
+    </p>
+    <ul>
+      <li>Tracking score</li>
+      <li>Changing position</li>
+      <li>Counting clicks or time</li>
+    </ul>
+    <h3>It follows a simple formula:</h3>
+    <pre>
+        variable = variable + 1;
+    </pre>
+    <h3>Or subtraction:</h3>
+    <pre>
+        variable = variable - 1;
+    </pre>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Pattern Code</th>
+          <th>Description</th>
+          <th>Example Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>score = score + 1</td>
+          <td>Adds 1 to score</td>
+          <td>Track points</td>
+        </tr>
+        <tr>
+          <td>x = x + 1</td>
+          <td>Moves sprite right</td>
+          <td>Sprite movement</td>
+        </tr>
+        <tr>
+          <td>y = y - 1</td>
+          <td>Moves sprite up</td>
+          <td>Sprite movement</td>
+        </tr>
+        <tr>
+          <td>time = time - 1</td>
+          <td>Countdown timer</td>
+          <td>Game timer</td>
+        </tr>
+        <tr>
+          <td>speed = speed + 2</td>
+          <td>Increases speed by 2 each frame</td>
+          <td>Acceleration effect</td>
+        </tr>
+        <tr>
+          <td>size = size - 0.1</td>
+          <td>Shrinks something slowly</td>
+          <td>Animation effect</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>🔁 In Game Lab, this usually goes inside the draw() function so it updates every frame.</h4>
+    <hr />
     <h2>🧠 CONDITIONALS</h2>
     <p>Conditionals let your program make decisions.</p>
     <h3>Example in code:</h3>
