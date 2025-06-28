@@ -74,6 +74,11 @@
       <li>Y-axis (top to bottom)</li>
       <li>(0, 0) is the top-left corner</li>
     </ul>
+    <h4>Example:</h4>
+    <pre>
+        sprite.x = horizontal position
+        sprite.y = vertical position
+    </pre>
 
     <table style="border-collapse: collapse; width: 50%; margin-top: 20px">
       <tr style="background-color: #f2f2f2">
@@ -184,7 +189,14 @@
 
     <h3>✅ Use draw() for:</h3>
     <ul>
-      <li>Movement</li>
+      <li>🎮 Movement <br> 
+        <p>Example:</p>
+        <pre>
+        // Moves right
+        sprite.velocityX = 3; 
+        // Moves up  
+        sprite.velocityY = -2; </pre>
+      </li>
       <li>Animation</li>
       <li>Constant updates</li>
     </ul>
@@ -192,5 +204,18 @@
       🔁 Put moving and changing things inside draw(). 🚫 Don't put
       createSprite() or var score = 0 inside draw()—they’ll reset every frame!
     </h3>
+    <hr>
+    <h2>🧠 Tips</h2>
+    <ul>
+        <li>End every statement with a ;</li>
+        <li>Use camelCase for variable names: myScore, playerSpeed</li>
+        <li>Keep your code organized using spacing and indentation</li>
+    </ul>
   </body>
+  
+    
+
+    
+
+    
 </html>
